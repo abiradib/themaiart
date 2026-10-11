@@ -1,0 +1,14 @@
+{
+  "name": "absented-site-tools",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "render": "node render.mjs ../Presentation.pdf ./out 2400",
+    "build": "node build.mjs ./out ../Presentation.pdf .."
+  },
+  "dependencies": {
+    "@napi-rs/canvas": "0.1.65",
+    "pdfjs-dist": "4.10.38",
+    "sharp": "0.33.5"
+  }
+}
